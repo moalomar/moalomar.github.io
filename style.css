@@ -1,0 +1,120 @@
+@keyframes fade { from { transform: translateY(.3rem); opacity: 0 } }
+@keyframes highlight { from { background: whitesmoke; color: black } }
+@font-face {font-family: 'Spicy Noodle'; src: url('Spicy Noodle.woff2'); font-display: swap}
+@font-face {font-family: 'SV Basic Manual'; src: url('SV Basic Manual.woff2'); font-display: swap}
+@font-face {font-family: 'Arabic UI Display'; src: url('Arabic UI Display.woff2'); font-display: swap}
+
+
+* {
+margin: 0;
+font-size: .45rem;
+font-family: Spicy Noodle, cursive}
+
+
+html {
+display: flex;
+text-align: center;
+justify-content: center;
+font-size: clamp(0px, 10vw, 47px);
+-webkit-tap-highlight-color: transparent}
+
+
+body {
+width: 10rem;
+font-size: 0;
+color: white;
+padding: .6rem;
+background: black;
+box-sizing: border-box}
+
+
+h1 {
+color: #F9D423;
+font-size: 1.5rem;
+font-weight: bolder;
+line-height: 1.4rem}
+
+
+h3 {
+font-size: .5rem;
+line-height: .5rem;
+font-weight: normal;
+margin: 1.2rem 0 .125rem}
+
+
+h2, label {
+font-size: .7rem;
+font-weight: normal}
+
+
+a {
+display: inline-block;
+margin: .2rem .15rem 0}
+
+
+img {
+width: .5rem;
+height: auto;
+display: block}
+
+
+form {
+color: black;
+display: flex;
+padding: .5rem;
+flex-wrap: wrap;
+border-radius: .8rem;
+margin: 1rem 0 .65rem;
+background: whitesmoke;
+justify-content: space-around;
+box-shadow: 0 .125rem darkgray}
+
+
+input, span {
+font-family: 'SV Basic Manual', 'Arabic UI Display', cursive}
+
+
+input {
+width: 100%;
+text-align: center;
+padding: .3rem .4rem;
+border-radius: .8rem;
+margin: .3rem 0 .5rem;
+box-sizing: border-box;
+border: #CED4DA solid 1px}
+
+
+button {
+color: white;
+cursor: pointer;
+border-radius: .8rem}
+
+
+form button {
+font-weight: bolder;
+padding: .3rem .35rem;
+border: black solid .05rem;
+box-shadow: 0 .125rem black;
+-webkit-text-stroke: .025rem black}
+button:nth-child(2) {background: #dc3545}
+button:nth-child(3) {background: #ffc107}
+
+
+body > button {
+border: none;
+color: black;
+padding: .2rem .4rem;
+background: whitesmoke;
+box-shadow: 0 .125rem darkgray}
+
+
+p {
+margin-top: .8rem;
+animation: fade 2s}
+
+
+span {
+line-height: .7rem;
+white-space: pre-wrap;
+background: transparent;
+overflow-wrap: break-word}
